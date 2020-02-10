@@ -1,0 +1,65 @@
+{% extends "base.html" %} {% block main %}
+
+<div class="open">
+    <img src="{{ url_for('static', filename='img/profile_pic.jpg') }}" alt="Profile" class="avatar">
+
+    <div class="name">
+        <p>Mario Scott</p>
+    </div>
+    <div class="addy">
+        <p>@rscott</p>
+    </div>
+    <div class="location">
+        <p>Kingston, Jamaica</p>
+    </div>
+    <div class="joined">
+        <p>{{ date }}</p>
+    </div>
+
+
+    <div class="desc">
+        <p>A motivated, adaptable and responsible Computing graduate seeking a position in an IT position which will utilise the professional and technical skills developed through past work experiences in this field.</p>
+    </div>
+    <div class="follow">
+        <div class="row">
+            <div class="column">
+                <p class="top">
+                    7
+                </p>
+                <p class="bottom">
+                    Post
+                </p>
+            </div>
+            <div class="column">
+                <p class="top">
+                    59
+                </p>
+                <p class="bottom">
+                    Following
+                </p>
+            </div>
+            <div class="column">
+                <p class="top">
+                    78
+                </p>
+                <p class="bottom">
+                    Followers
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom_a">
+        <button>Follow</button>
+    </div>
+
+
+
+
+
+
+
+
+</div>
+
+{% endblock %}
